@@ -7,8 +7,8 @@ const templateRE = /\/\*===properties start===\*\/([()\[\]\w\s={}:.;,'"=>\u4E00-
 const targetPropsRE = /## properties:\n```javascript\n(.*)\n```/;
 const targetUsageRE = /## usage:\n```jsx\n(.*)\n```/;
 
-let readmeFile = path.join(__dirname,'../README.MD');
-let _readmeFile = path.join(__dirname,'../_README.MD');
+let readmeFile = path.join(__dirname,'../README.md');
+let _readmeFile = path.join(__dirname,'../_README.md');
 let exampleFile = path.join(__dirname,'../src/dev.js');
 let templateFile = path.join(__dirname,'../src/components/react-ant-range-picker.js');
 

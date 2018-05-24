@@ -84,10 +84,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "object-assign": "^4.1.1",
+    "next-return-event": "github:afeiship/next-return-event",
     "noop": "github:afeiship/noop",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.5.10",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "prop-types": "^15.5.10"
+    "react-dom": "^15.4.1"
   }
 }
