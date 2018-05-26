@@ -10,7 +10,6 @@ import 'next-return-event';
 export default class extends Component{
   /*===properties start===*/
   static propTypes = {
-    className: PropTypes.string,
     format: PropTypes.string,
     onChange: PropTypes.func,
   };
@@ -23,7 +22,6 @@ export default class extends Component{
 
   _onChange = (inEvent) => {
     const {
-      format,
       onChange
     } = this.props;
 
@@ -32,7 +30,7 @@ export default class extends Component{
 
 
   render(){
-    const { className, onChange,  ...props } = this.props;
+    const { onChange,  ...props } = this.props;
     return (
       <DatePicker.RangePicker onChange={this._onChange} {...props} />
     );
