@@ -27,13 +27,7 @@ export default class extends Component{
       onChange
     } = this.props;
 
-    if (inEvent.length > 0) {
-      const start = inEvent[0].format(format);
-      const end = inEvent[1].format(format);
-      onChange(nx.returnEventTarget([start, end]));
-    } else {
-      onChange(nx.returnEventTarget(inEvent));
-    }
+    onChange(nx.returnEventTarget(inEvent));
   };
 
 

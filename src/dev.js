@@ -8,7 +8,7 @@ import ReactAntRangePicker from './main';
 
 class App extends React.Component{
   state = {
-
+    value: []
   };
 
   constructor(props){
@@ -19,13 +19,13 @@ class App extends React.Component{
   }
 
   _onChange = e => {
-    console.log(e);
+    this.setState({ value: e.target.value })
   };
 
   render(){
     return (
       <div className="hello-react-ant-range-picker">
-        <ReactAntRangePicker onChange={this._onChange} ref='rc' />
+        <ReactAntRangePicker value={this.state.value} onChange={this._onChange} ref='rc' />
     </div>
     );
   }
