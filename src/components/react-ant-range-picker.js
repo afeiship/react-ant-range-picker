@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import noop from 'noop';
 import objectAssign from 'object-assign';
 import { DatePicker } from 'antd';
-import 'next-return-event';
+import { returnEventTarget } from 'next-return-event';
 
 export default class extends Component{
   /*===properties start===*/
@@ -25,7 +25,7 @@ export default class extends Component{
       onChange
     } = this.props;
 
-    onChange(nx.returnEventTarget(inEvent));
+    onChange(returnEventTarget(inEvent));
   };
 
 
